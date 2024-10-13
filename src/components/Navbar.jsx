@@ -2,7 +2,7 @@
 function Navbar() {
 
   return (
-    <div>
+    <div className="text-black">
       Navbar
     </div>
 
