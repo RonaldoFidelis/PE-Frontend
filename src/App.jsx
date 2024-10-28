@@ -16,7 +16,7 @@ function App() {
 
   return (
     <BrowserRouter>
-      <Navbar/>
+      {location.pathname !== "/LOGIN" && <Navbar/>}
       <Routes>
         <Route path="/login" element={<Login/>}/>
         <Route path="/" element={<Home/>}/>
@@ -25,7 +25,7 @@ function App() {
         <Route path="/agendamento" element={<Form/>}/>
         <Route path="/acc ount" element={<Account/>}/>
       </Routes>
-      <Footer/>
+      {location.pathname !== "/LOGIN" && <Footer/>}
     </BrowserRouter> 
   )
 }   
