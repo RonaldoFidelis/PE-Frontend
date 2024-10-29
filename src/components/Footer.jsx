@@ -22,8 +22,8 @@ function Footer() {
           </li>
         </ul>
       </div>
-      <div className="mt-5 md:mt-0 md:col-span-1 px-5 ">
-        <div className="flex flex-col gap-2 md:w-[400px] px-2">
+      <div className="mt-5 md:mt-0 md:col-span-1 px-5">
+        <div className="flex flex-col gap-2 md:w-[400px]">
           <h1 className="text-backgroundSecondary/70 text-base">Sobre o projeto</h1>
           <p className="text-background/70 text-xs">Projeto social sem fins lucrativos
             desenvolvido para ajudar a população. Acesse nossas redes sociais clicando no
