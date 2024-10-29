@@ -1,6 +1,6 @@
 import { useState, useEffect } from "react";
 import perfil from "../assets/perfil.svg";
-import "../style/Navbar.css"
+import "../style/navbar.css"
 
 function Navbar() {
   const [menuOpen, setMenuOpen] = useState(false);
