@@ -5,7 +5,7 @@ function Footer() {
   return (
     <footer className="bg-backgroundBlue/60 grid grid-cols-1 md:grid-cols-2 p-2 md:p-8">
       <div className="md:col-span-1 px-5">
-        <h1 className="mb-4 text-background text-xl font-normal">Consultório comunitario</h1>
+        <h1 className=":mt-5 md:mt-0 mb-4 text-background text-xl font-normal">Consultório comunitario</h1>
         <ul className="flex flex-col">
           <h1 className="text-background text-sm font-normal mb-1">Contatos:</h1>
           <li className="flex flex-row gap-1 items-center mb-[2px]">
