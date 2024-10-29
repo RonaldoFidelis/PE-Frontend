@@ -1,9 +1,11 @@
 import Banner from "../components/Banner";
+import Posters from "../components/Posters";
 
 function Home() {
   return (
-    <section className="flex h-screen gap-5">
+    <section className="flex flex-col items-center h-full">
       <Banner/>
+      <Posters/>
     </section>
   )
 }
