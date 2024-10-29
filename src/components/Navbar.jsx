@@ -1,8 +1,10 @@
 import { useState, useEffect } from "react";
+import { Link, useLocation } from "react-router-dom";
 import perfil from "../assets/perfil.svg";
 import "../style/navbar.css"
 
 function Navbar() {
+  const location = useLocation();
   const [menuOpen, setMenuOpen] = useState(false);
 
   useEffect(() => {
@@ -24,10 +26,10 @@ function Navbar() {
   }
 
   return (
-    <div className="bg-background w-full fixed flex items-center justify-between py-5 px-5 z-20">
-      <a className=" flex items-center gap-2" href="/">
-        <h1 className="text-xl text-font font-thin">Consultório comunitário</h1>
-      </a>
+    <div className={location.pathname === "/login" ? "hidden" :"bg-background w-full fixed flex items-center justify-between py-5 px-5 z-20"}>
+      <Link className=" flex items-center gap-2 text-xl text-font font-thin" to="/">
+        Consultório comunitário
+      </Link>
       {/* Logica para checar se o menuMobile está aberto ou não */}
       <nav className={menuOpen ? "menu-open" : ""}>
         <button onClick={handleMobile} className="text-base font-medium flex p-1 gap-2 items-center md:hidden">
@@ -37,38 +39,38 @@ function Navbar() {
         {menuOpen ? (
           <ul className="text-font bg-background block absolute w-full h-[calc(100vh-64px)] right-0 top-[3.6rem] px-12 z-50">
             <li className="px-1 py-4 border-b-backgroundSecondary border-opacity-50 border-b-2">
-              <a
+              <Link
                 onClick={handleMobile}
                 className="block p-1 text-lg font-extralight"
-                href="/">Nossos psicologos</a>
+                to="/">Nossos psicologos</Link>
             </li>
             <li className="px-1 py-4 border-b-backgroundSecondary border-opacity-50 border-b-2">
-              <a
+              <Link
                 onClick={handleMobile}
                 className="block p-1 text-lg font-extralight"
-                href="/">Sobre o projeto</a>
+                to="/">Sobre o projeto</Link>
             </li>
             <li className="px-1 py-4 border-b-backgroundSecondary border-opacity-50 border-b-2">
-              <a
+              <Link
                 onClick={handleMobile}
                 className="block p-1 text-lg font-extralight"
-                href="/">Agendamento</a>
+                to="/">Agendamento</Link>
             </li>
           </ul>) : (
           <ul className=" hidden md:flex md:items-center md:justify-center md:gap-5 z-50">
             <li className="font-extralight">
-              <a className="hover-underline" href="/">Nosso psicologos</a>
+              <Link className="hover-underline" to="/">Nosso psicologos</Link>
             </li>
             <li className="font-extralight">
-              <a className="hover-underline" href="/">Sobre o projeto</a>
+              <Link className="hover-underline" to="/">Sobre o projeto</Link>
             </li>
             <li className="font-extralight">
-              <a className="hover-underline" href="/">Agendamentos</a>
+              <a className="hover-underline" to="/">Agendamentos</a>
             </li>
             <li className="font-extralight">
-              <a className="" href="/login">
+              <Link className="" to="/login">
                 <img src={perfil} className="w-[35px]" />
-              </a>
+              </Link>
             </li>
           </ul>)}
       </nav>
