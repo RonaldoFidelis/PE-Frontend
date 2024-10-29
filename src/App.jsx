@@ -16,16 +16,16 @@ function App() {
 
   return (
     <BrowserRouter>
-      {location.pathname !== "/LOGIN" && <Navbar/>}
+      {location.pathname !== "/login" && <Navbar/>}
       <Routes>
-        <Route path="/login" element={<Login/>}/>
         <Route path="/" element={<Home/>}/>
+        <Route path="/login" element={<Login/>}/>
         <Route path="/psicologos" element={<Psychologist/>}/>
         <Route path="/sobreprojeto" element={<Aboutproject/>}/>
         <Route path="/agendamento" element={<Form/>}/>
         <Route path="/acc ount" element={<Account/>}/>
       </Routes>
-      {location.pathname !== "/LOGIN" && <Footer/>}
+      {location.pathname !== "/login" && <Footer/>}
     </BrowserRouter> 
   )
 }   
