@@ -26,15 +26,20 @@ function Navbar() {
   }
 
   return (
-    <div className={location.pathname === "/login" ? "hidden" :"bg-background w-full fixed flex items-center justify-between py-5 px-5 z-20"}>
+    <div className={location.pathname === "/login" ? "hidden" : "bg-background w-full fixed flex items-center justify-between py-5 px-5 z-20"}>
       <Link className=" flex items-center gap-2 text-xl text-font font-thin" to="/">
         Consultório comunitário
       </Link>
       {/* Logica para checar se o menuMobile está aberto ou não */}
       <nav className={menuOpen ? "menu-open" : ""}>
-        <button onClick={handleMobile} className="text-base font-medium flex p-1 gap-2 items-center md:hidden">
-          <span className="hamburguer"></span>
-        </button>
+        <div className="flex gap-3">
+          <Link to="/login">
+            <img src={perfil} className="w-[30px]" />
+          </Link>
+          <button onClick={handleMobile} className="text-base font-medium flex p-1 gap-2 items-center md:hidden">
+            <span className="hamburguer"></span>
+          </button>
+        </div>
         {/* Layout do menuMobile e menuNormal */}
         {menuOpen ? (
           <ul className="text-font bg-background block absolute w-full h-[calc(100vh-64px)] right-0 top-[3.6rem] px-12 z-50">
