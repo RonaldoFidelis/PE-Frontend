@@ -33,7 +33,7 @@ function Navbar() {
       {/* Logica para checar se o menuMobile está aberto ou não */}
       <nav className={menuOpen ? "menu-open" : ""}>
         <div className="flex gap-3">
-          <Link to="/login">
+          <Link to="/login" className="md:hidden">
             <img src={perfil} className="w-[30px]" />
           </Link>
           <button onClick={handleMobile} className="text-base font-medium flex p-1 gap-2 items-center md:hidden">
