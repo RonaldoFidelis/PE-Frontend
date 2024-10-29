@@ -4,7 +4,7 @@ function Login() {
   return (
     <div className="flex bg-background">
       {/*Tela de login*/}
-      <div className="w-screen md:w-2/3 h-screen flex flex-col items-center justify-center">
+      <div className="w-screen md:w-1/2 h-screen flex flex-col items-center justify-center">
         <div className=" flex flex-col items-center gap-1 mb-14">
           <h1 className="text-font text-2xl font-extralight">Consultorio comunitario</h1>
           <h2 className="text-font text-lg font-extralight">Faça seu login</h2>
@@ -35,13 +35,13 @@ function Login() {
         <div className="h-max flex flex-col justify-center">
 
           {/* Mensagem de boas-vindas leve */}
-          <span className="text-font md:text-4xl lg:text-5xl font-extralight ">
-            Bem-vindo<br />de volta!
+          <span className="text-font md:text-3xl lg:text-5xl font-extralight ">
+            Bem-vindo<br/>de volta!
           </span>
 
           {/* Mensagem motivacional principal */}
-          <span className="text-background md:text-6xl lg:text-8xl font-semibold">
-            Juntos<br />fazemos<br />a diferença!
+          <span className="text-background md:text-6xl lg:text-8xl font-semibold leading-tight">
+            Juntos<br/>fazemos<br/>a diferença!
           </span>
 
         </div>
