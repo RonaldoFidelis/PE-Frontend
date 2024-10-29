@@ -3,6 +3,7 @@ import frame from "../assets/frameHome.webp";
 function Posters() {
   return (
     <section className="flex flex-col items-center w-full mt-[80px] mb-[50px]">
+      {/* 1 post */}
       <div className="relative flex">
         <img className="w-[350px] md:w-[460px] h-[300px] md:h-[360px]" src={frame} alt="frame" />
         <span className="absolute inset-0 flex flex-col gap-2 py-20 px-5 bg-black/20">
@@ -12,6 +13,7 @@ function Posters() {
           <p className="text-background text-sm md:text-base font-medium">Guimarães Rosa</p>
         </span>
       </div>
+      {/* 2 post */}
     </section>
   );
 }
