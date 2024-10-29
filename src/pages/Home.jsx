@@ -3,7 +3,7 @@ import Posters from "../components/Posters";
 
 function Home() {
   return (
-    <section className="flex flex-col items-center h-full">
+    <section className="flex flex-col items-center w-full min-h-screen">
       <Banner/>
       <Posters/>
     </section>
