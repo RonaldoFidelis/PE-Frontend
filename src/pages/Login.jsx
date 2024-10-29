@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom"
 
 function Login() {
   return (
@@ -22,9 +23,9 @@ function Login() {
         </div>
         {/*BTN*/}
         <div className="flex flex-col gap-1 mt-14 items-center">
-          <button className="bg-backgroundBlue text-background font-light rounded-[5px] w-[150px] h-[45px] p-2 transition ease-in-out hover:bg-opacity-80 duration-500">Login</button>
+          <Link to="/" className="bg-backgroundBlue text-background font-light rounded-[5px] w-[150px] h-[45px] py-3 transition ease-in-out hover:bg-opacity-80 duration-500 text-center">Login</Link>
           <span className="font-extralight text-xs transition hover:text-backgroundBlue duration-300">
-            <a href="#">Solicite cadastro</a>
+            <Link to="*">Solicite cadastro</Link>
           </span>
         </div>
       </div>
@@ -35,12 +36,12 @@ function Login() {
 
           {/* Mensagem de boas-vindas leve */}
           <span className="text-font md:text-4xl lg:text-5xl font-extralight ">
-            Bem-vindo<br/>de volta!
+            Bem-vindo<br />de volta!
           </span>
 
           {/* Mensagem motivacional principal */}
           <span className="text-background md:text-6xl lg:text-8xl font-semibold">
-            Juntos<br/>fazemos<br/>a diferença!
+            Juntos<br />fazemos<br />a diferença!
           </span>
 
         </div>
