@@ -7,6 +7,7 @@ import Psychologist from "./pages/Psychologist";
 import Aboutproject from "./pages/Aboutproject";
 import Form from "./pages/Form";
 import Account from "./pages/Account";
+import NotFound from "./pages/NotFound";
 
 //Components
 import Navbar from "./components/Navbar"
@@ -16,7 +17,7 @@ function App() {
 
   return (
     <BrowserRouter>
-      {location.pathname !== "/login" && <Navbar/>}
+      <Navbar/>
       <Routes>
         <Route path="/" element={<Home/>}/>
         <Route path="/login" element={<Login/>}/>
@@ -24,8 +25,9 @@ function App() {
         <Route path="/sobreprojeto" element={<Aboutproject/>}/>
         <Route path="/agendamento" element={<Form/>}/>
         <Route path="/acc ount" element={<Account/>}/>
+        <Route path="*" element={<NotFound/>} />
       </Routes>
-      {location.pathname !== "/login" && <Footer/>}
+      <Footer/>
     </BrowserRouter> 
   )
 }   
