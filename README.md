@@ -60,15 +60,19 @@ O sistema visa:
 6. **Integração ao Discord**: É convidado para a comunidade no Discord para suporte contínuo.
 
 ## Tecnologias Utilizadas
-- **Linguagem de Programação**: Java 8
-- **Frameworks e Bibliotecas**: [incluir detalhes se houver]
-- **Banco de Dados**: [detalhar o banco de dados usado, por exemplo, MySQL, PostgreSQL]
+- **Linguagem de Programação**: Javacript
+- **Frameworks e Bibliotecas**: ReactJS + Node
+- **Estilização**: Tailwindcss
 
 ## Como Executar o Projeto
-1. **Clone o repositório**: `git clone [URL]`
-2. **Compile o projeto**: Utilize ferramentas como Maven ou Gradle.
-3. **Configure o banco de dados**: [detalhes sobre a configuração]
-4. **Inicie o servidor**: `java -jar [nome_do_projeto].jar`
+1. **Clone o repositório**: 
+```git
+git clone [URL]
+```
+2. **Inicie o servidor**: 
+``` node 
+npm run dev
+```
 
 ## Contribuição
 Contribuições são bem-vindas! Para contribuir:
